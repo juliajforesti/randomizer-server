@@ -28,8 +28,8 @@ app.get('*', (req, res, next) => {
   return next()
 })
 
-app.use((req, res, next)=> {
-  res.sendFile(__dirname + '/public/index.html')
-})
+// app.use((req, res, next)=> {
+//   res.sendFile(__dirname + '/public/index.html')
+// })
 
 app.listen(process.env.PORT, () => console.log(`Server up and running on port ${process.env.PORT}`))
