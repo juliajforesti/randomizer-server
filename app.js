@@ -9,6 +9,12 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+app.use(
+  cors({
+    credentials: true,
+    origin: process.env.CORS_ORIGIN //
+  })
+);
 
 db()
 
