@@ -22,17 +22,17 @@ app.use('/api', require('./routes/cohort.routes'))
 
 
 // configurando o express para servir a partir da pasta public
-const publicPath = __dirname + 'public'
+const publicPath = __dirname + '/public'
 
 app.use(express.static(path.join(publicPath)));
 app.get('*', (req, res, next) => {
   const hostUrl = req.originalUrl;
   if (!hostUrl.includes('/api')){
-    console.log(hostUrl)
     return res.sendFile(path.join(publicPath, 'index.html'))
   }
   return next()
 })
+
 
 app.use((req, res, next)=> {
   res.sendFile(__dirname + '/public/index.html')
