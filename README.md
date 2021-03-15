@@ -14,6 +14,8 @@ Deploy: [Here](https://randomizer-ironhack-app.herokuapp.com/)
 - Add new cohort: add your cohort choosing the format (Full Time or Part Time), the course (Web Dev, UX UI or Data Analytics), start month and year and insert students names.
 - Custom list: create your custom list of names. This won't be saved on the Data Base, but you will be able to use all features.
 
+![Alt text](./src/assets/images/screenshot.png?raw=true "screenshot.png")
+
 ### Frontend repository [here](https://github.com/juliajforesti/randomizer/tree/fullstack) (branch fullstack)
 
 ## Next step:
